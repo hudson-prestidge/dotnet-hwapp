@@ -6,9 +6,11 @@ namespace ConsoleApplication
        
         public static void Main (string[] args){
             Console.WriteLine("testing console.writeline");
-            int[] myArr = new int[3];
-            myArr[0] = 1;
-            Console.WriteLine("the first element in my array is: " + myArr[0]);
+            int[] myArr = new int[10];
+            for(int i = 0; i < myArr.Length; i++){
+                myArr[i] = i*2 + 1;
+                Console.WriteLine(myArr[i]);
+            }
         }
     }
 }
